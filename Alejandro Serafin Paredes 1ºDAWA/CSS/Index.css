@@ -1,0 +1,95 @@
+body {
+	background: linear-gradient(-45deg, #8d1818,#000000, #d60e0e,#000000);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	animation: gradient 15s ease infinite;
+    overflow: hidden;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.fire{
+    rotate: -20deg;
+    scale: 0.5;
+    animation-iteration-count:initial;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    animation-duration: 01.5s;
+    position: absolute;
+    left: 30%;
+    top: 15%;
+}
+.fire2{
+    rotate: 25deg;
+    scale: 0.5;
+    animation-iteration-count:initial;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    position: absolute;
+    left: 54%;
+    top: 15%;
+}
+.efecto-boton{
+    top: 45%;
+    left: 45%;
+    font-size:x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 10%;
+    height: 10%;
+    scale: 1.5;
+    text-decoration: none;
+    background: rgb(78, 76, 76);
+    color: #d7d441;
+    border: 2px solid #000000;
+    padding: 16px 20px;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+.efecto-boton:hover{
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 50px rgb(22, 102, 168);
+    transition: all 0.2s ease;
+}
+.efecto-boton::after{
+  content: "";
+  background: #df752f;
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: -32%;
+  right: -32%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+
+.efecto-boton:hover::after{
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+}
