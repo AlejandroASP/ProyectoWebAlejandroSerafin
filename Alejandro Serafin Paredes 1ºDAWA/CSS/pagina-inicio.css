@@ -4,6 +4,9 @@ body{
     width: 100%;
     background-image: url(../Imagenes/fondo-princip.jpg);
 }
+.pepe{
+    z-index: 2;
+}
 .caja{
     position: absolute;
     height: 40px;
