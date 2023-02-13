@@ -98,16 +98,19 @@ p{
     transform: skewX(-45deg) scale(1, 1);
 }
 .gatito{
-    overflow: hidden;
+    visibility: hidden;
+    position: absolute;
     margin-top: 26.9%;
     margin-left: -5%;
     scale: 0.5;
     animation-name: gato;
     animation-duration:10s;
+    animation-delay: 3s;
     animation-iteration-count: infinite;
 }
 @keyframes gato{
     0%{
+        visibility: visible;
         margin-left: -20%;
         margin-top: 26.9%;
     }
@@ -123,3 +126,28 @@ p{
         margin-left: 100%;
     }
 }
+.gatito2{
+    visibility: hidden;
+    position: absolute;
+    margin-top: -7.95%;
+    margin-left: 94.3%;
+    scale: 0.5;
+    transform: rotateY(-180deg);
+    transform: rotate(180deg);
+    animation-name: gato2;
+    animation-delay: 13s;
+    animation-duration:10s;
+    animation-iteration-count: infinite;
+}
+ @keyframes gato2{
+    0%{
+        visibility: visible;
+        margin-left:94.3%;
+    }
+    2%{
+        margin-left:100%;
+    }
+    100%{
+        margin-left: -30%;
+    }
+} 
