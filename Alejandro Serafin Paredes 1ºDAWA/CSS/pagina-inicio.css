@@ -3,6 +3,7 @@ body{
     height: 100%;
     width: 100%;
     background-image: url(../Imagenes/fondo-princip.jpg);
+    gap: 20px;
 }
 .pepe{
     z-index: 2;
@@ -11,12 +12,13 @@ body{
     padding-top: -10%;
     position: absolute;
     height: 40px;
-    width:99%;
+    width:98.2%;
     background-color: white;
     text-align: center;
     padding-top: 1.5%;
     font-weight: bold;
     font-size: large;
+    border: solid black;
 }
 .caja div{
     margin-left: 5%;
@@ -29,7 +31,7 @@ body{
     left: 5%;
     position: absolute;
     margin-top: 8%;
-    width: 90%;
+    width: 90.3%;
     height: 8%;
     text-align: center;
     padding-top: 0.9%;
@@ -41,17 +43,22 @@ body{
     border-style:solid;
     z-index: 1;
 }
+p{
+    position: absolute;
+    left: 36%;
+    top: -5%;
+}
 .pepe{
     position: absolute;
-    top: 13.5%;
+    top: -50%;
     scale: 0.5;
-    left: 30%;
+    left: 27%;
 }
 .pepe2{
     position: absolute;
-    top: 13.5%;
+    top: -50%;
     scale: 0.5;
-    left: 60.5%;
+    left: 61.7%;
     transform: rotateY(180deg);
     z-index: 1;
 }
@@ -59,21 +66,87 @@ body{
     position: absolute;
     left: 5%;
     width: 90.3%;
-    height: 50%;
+    height: 150%;
     top: 28.7%;
     background-color: white;
+    border: solid black;
+    border-top: none;
 }
-.right{
-    background-color: aqua;
-    margin-left: 80%;
+.Slipknot{
+    position: absolute;
+    background-color: red;
+    top: 5%;
+    left: 5%;
     width: 20%;
-    height: 20%;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bolder;
-    font-size: large;
-    margin-top: -1.4%;
+    height: 30%;
 }
-.inf{
-    padding-top: 5%;
+.SystemOfADown{
+    position: absolute;
+    background-color: red;
+    top: 5%;
+    left: 40%;
+    width: 20%;
+    height: 30%;
 }
+.GunsRoses{
+    position: absolute;
+    background-color: red;
+    top: 5%;
+    left: 75%;
+    width: 20%;
+    height: 30%;
+}
+.Korn{
+    position: absolute;
+    background-color: red;
+    top: 50%;
+    left: 5%;
+    width: 20%;
+    height: 30%;
+}
+.Rammstein{
+    position: absolute;
+    background-color: red;
+    top: 50%;
+    left: 40%;
+    width: 20%;
+    height: 30%;
+}
+.BringMeHorizon{
+    position: absolute;
+    background-color: red;
+    top: 50%;
+    left: 75%;
+    width: 20%;
+    height: 30%;
+}
+
+.Slipknot:hover{
+    background-color: lightblue;
+    top: 3%;
+}
+.SystemOfADown:hover{
+    background-color: lightblue;
+    top: 3%;
+}
+.GunsRoses:hover{
+    background-color: lightblue;
+    top: 3%;
+}
+.Korn:hover{
+    background-color: lightblue;
+    top: 47%;
+}
+.Rammstein:hover{
+    background-color: lightblue;
+    top: 47%;
+}
+.BringMeHorizon:hover{
+    background-color: lightblue;
+    top: 47%;
+}
+@media screen and (max-width: 600px) {
+    .contenido{
+      display: block;
+    }
+  }
