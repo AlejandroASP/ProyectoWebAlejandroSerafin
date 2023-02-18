@@ -72,56 +72,63 @@ p{
     border: solid black;
     border-top: none;
 }
-.Slipknot{
+.contenido .cajas div{
     position: absolute;
+    box-shadow:10px 10px 50px black;
     background-color: red;
+    transition: .35s ease-in-out;
+}
+.contenido .cajas2 div{
+    position: absolute;
+    box-shadow:10px 10px 50px black;
+    background-color: red;
+    transition: .35s ease-in-out;
+}
+.Slipknot{
     top: 5%;
     left: 5%;
     width: 20%;
     height: 30%;
 }
 .SystemOfADown{
-    position: absolute;
-    background-color: red;
     top: 5%;
     left: 40%;
     width: 20%;
     height: 30%;
 }
 .GunsRoses{
-    position: absolute;
-    background-color: red;
     top: 5%;
     left: 75%;
     width: 20%;
     height: 30%;
 }
 .Korn{
-    position: absolute;
-    background-color: red;
     top: 50%;
     left: 5%;
     width: 20%;
     height: 30%;
 }
 .Rammstein{
-    position: absolute;
-    background-color: red;
     top: 50%;
     left: 40%;
     width: 20%;
     height: 30%;
 }
 .BringMeHorizon{
-    position: absolute;
-    background-color: red;
     top: 50%;
     left: 75%;
     width: 20%;
     height: 30%;
 }
-
-.Slipknot:hover{
+.contenido .cajas div:hover{
+    background-color: lightblue;
+    top: 3%;
+}
+.contenido .cajas2 div:hover{
+    background-color: lightblue;
+    top: 46%;
+}
+/* .Slipknot:hover{
     background-color: lightblue;
     top: 3%;
 }
@@ -144,9 +151,18 @@ p{
 .BringMeHorizon:hover{
     background-color: lightblue;
     top: 47%;
-}
+} */
 @media screen and (max-width: 600px) {
     .contenido{
-      display: block;
+      display:contents;
     }
+    .wellcome{
+        display:block;
+      }
+      .pepe{
+        display: block;
+      }
+      .pepe2{
+        display: block;
+      }
   }
