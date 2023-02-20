@@ -50,13 +50,13 @@ p{
 }
 .pepe{
     position: absolute;
-    top: -50%;
+    top: -40%;
     scale: 0.5;
     left: 27%;
 }
 .pepe2{
     position: absolute;
-    top: -50%;
+    top: -40%;
     scale: 0.5;
     left: 61.7%;
     transform: rotateY(180deg);
