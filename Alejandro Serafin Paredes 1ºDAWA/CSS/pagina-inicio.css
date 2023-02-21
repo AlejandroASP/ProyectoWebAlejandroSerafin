@@ -9,7 +9,7 @@ body{
     z-index: 2;
 }
 .caja{
-    padding-top: -10%;
+    padding-top: -20%;
     position: absolute;
     height: 40px;
     width:98.2%;
@@ -20,11 +20,13 @@ body{
     font-size: large;
     border: solid black;
 }
-.caja div{
+.caja ul li{
+    position: relative;
+    top: -20px;
     margin-left: 5%;
     display:inline;
 }
-.caja div a{
+.caja ul li  a{
     text-decoration: none;
 }
 .wellcome{
@@ -128,32 +130,9 @@ p{
     background-color: lightblue;
     top: 46%;
 }
-/* .Slipknot:hover{
-    background-color: lightblue;
-    top: 3%;
-}
-.SystemOfADown:hover{
-    background-color: lightblue;
-    top: 3%;
-}
-.GunsRoses:hover{
-    background-color: lightblue;
-    top: 3%;
-}
-.Korn:hover{
-    background-color: lightblue;
-    top: 47%;
-}
-.Rammstein:hover{
-    background-color: lightblue;
-    top: 47%;
-}
-.BringMeHorizon:hover{
-    background-color: lightblue;
-    top: 47%;
-} */
+
 @media screen and (max-width: 600px) {
-    .contenido{
+    body{
       display:contents;
     }
     .wellcome{
