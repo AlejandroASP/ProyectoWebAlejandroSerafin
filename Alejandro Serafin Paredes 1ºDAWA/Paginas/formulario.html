@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Formulario con despliegue</title>
-	<style>
-		.content {
-			display: none;
-		}
-		
-		.checkbox:checked ~ .content {
-			display: block;
-		}
-	</style>
+	<link rel="stylesheet" href="../CSS/formulario.css">
+	<meta charset="UTF-8">
+	<title>Formulario</title>
 </head>
 <body>
-	<form>
-		<label for="checkbox">Haz clic aquí para desplegar contenido:</label>
-		<input type="checkbox" id="checkbox" class="checkbox">
-		<div class="content">
-			<p>¡Este es el contenido que se despliega cuando se marca la casilla de verificación!</p>
-		</div>
-	</form>
+	<nav class="caja">
+        <div>
+            <ul>
+                <li>
+                    <a href="../Index.html">Wellcome</a>
+                </li>
+                <li>
+                    <a href="#">Video</a>
+                </li>
+                <li>
+                    <a href="#">Coming Soon</a>
+                </li>
+                <li>
+                    <a href="../Paginas/formulario.html">Formulario</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	<div class="contenido">
+		<form class="formulario">
+			<label for="checkbox">Introduce tus datos para notificar conciertos de tu grupo favorito:</label>
+			<input type="checkbox" id="checkbox" class="checkbox">
+			<div class="content">
+				<table>
+					<tr>
+						<td>
+							Nombre
+							<input type="text">
+						</td>
+						<td>
+							Apellidos
+							<input type="text">
+						</td>
+						<td>
+							Num.Teléfono
+							<input type="text">
+						</td>
+						<td>
+							Correo
+							<input type="text">
+						</td>
+						<td>
+							Num.Teléfono
+							<input type="email">
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</div>
+
 </body>
 </html>
