@@ -170,7 +170,60 @@ p{
     position: absolute;
     z-index: 1;
 }
-.Slipknot:hover .character{
+.corey{
+    width: 100%;
+    opacity: 0;
+    top: -15%;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 1;
+}
+.kornband{
+    width: 100%;
+    top: 10%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 1;
+}
+.soadlogo{
+    width: 100%;
+    top: 70%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 1;
+}
+.rammslogo{
+    width: 100%;
+    top: 70%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 1;
+}
+.kornlogo{
+    width: 100%;
+
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 1;
+}
+.character2{
+    width: 100%;
+    top: 40%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 1;
+}
+.Slipknot:hover .corey{
+    opacity: 1;
+    scale: 0.5;
+    transform: translate3d(0%, 20%, 100px);
+}
+.Slipknot:hover .character2{
     opacity: 1;
     scale: 0.7;
     transform: translate3d(0%, 20%, 100px);
@@ -180,20 +233,39 @@ p{
     scale: 0.7;
     transform: translate3d(0%, -10%, 100px);
 }
+.SystemOfADown:hover .soadlogo{
+    opacity: 1;
+    scale: 0.7;
+    transform: translate3d(0%, -10%, 100px);
+}
 .GunsRoses:hover .character{
     opacity: 1;
     scale: 0.7;
     transform: translate3d(0%, -5%, 100px);
 }
-.Korn:hover .character{
+.GunsRoses:hover .character2{
+    opacity: 1;
+    scale: 0.7;
+    transform: translate3d(0%, -5%, 100px);
+}
+.Korn:hover .kornband{
     opacity: 1;
     scale: 0.9;
     transform: translate3d(0%, 30%, 100px);
 }
-
+.Korn:hover .kornlogo{
+    opacity: 1;
+    scale: 0.9;
+    transform: translate3d(0%, 30%, 100px);
+}
 .Rammstein:hover .character{
     opacity: 1;
     scale: 0.7;
+    transform: translate3d(0%, -5%, 100px);
+}
+.Rammstein:hover .rammslogo{
+    opacity: 1;
+    scale: 1;
     transform: translate3d(0%, -5%, 100px);
 }
 .Scorpions:hover .character{
