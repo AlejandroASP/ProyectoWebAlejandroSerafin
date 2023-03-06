@@ -6,6 +6,7 @@
   display: block;
 }
 body{
+  font-family: Arial, Helvetica, sans-serif;
   height: 100%;
   width: 100%;
   background-image: url(../Imagenes/fondo-princip.jpg);
@@ -59,4 +60,7 @@ tr td{
   margin-top: 10%;
   display:flex;
   justify-content: space-between;
+}
+.checkbox:hover{
+  box-shadow: 2px 2px 10px black;
 }
