@@ -1,12 +1,8 @@
 body{
-    font-family: mifuente;
+    font-family: Arial, Helvetica, sans-serif;
     height: 100%;
     width: 100%;
     background-image: url(../Imagenes/fondo-princip.jpg);
-}
-@font-face {
-    font-family:mifuente;
-    src: url(../Fuentes);
 }
 .pepe{
     z-index: 2;
@@ -34,13 +30,14 @@ body{
 .caja ul li a{
     text-decoration: none;
     background-color: none;
-    color: red;
+    color: black;
     transition: .35s ease-in-out;
 }
-
-.caja ul li a:hover{
-    color: rgb(62, 37, 206);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+li:first-child:hover{
+    background-color:rgb(107, 107, 247);
+}
+li:nth-child(2):hover{
+    background-color: rgb(247, 57, 57);
 }
 
 .wellcome{
@@ -382,5 +379,4 @@ p{
     position: absolute;
     z-index: 1;
 }
-
 

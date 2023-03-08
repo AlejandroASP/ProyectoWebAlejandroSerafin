@@ -3,9 +3,11 @@ body {
 	background-size: 400% 400%;
 	-webkit-animation: gradient 15s ease infinite;
 	animation: gradient 15s ease infinite;
-    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    max-width: 1450px;
+    min-width: 300px;
 }
-
 @-webkit-keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -29,7 +31,13 @@ body {
 		background-position: 0% 50%;
 	}
 }
+.button{
+    display: flex;
+    flex-wrap: wrap;
+}
 .fire{
+    display: flex;
+    align-items: center;
     rotate: -20deg;
     scale: 0.5;
     animation-iteration-count:initial;
@@ -37,26 +45,28 @@ body {
     animation-direction: reverse;
     animation-duration: 01.5s;
     position: absolute;
-    left: 30.5%;
-    top: 15%;
+    left: 45%;
+    top: 20%;
 }
 .fire2{
+    display: flex;
+    align-items: center;
     rotate: 25deg;
     scale: 0.5;
     animation-iteration-count:initial;
     animation-timing-function: linear;
     animation-direction: reverse;
     position: absolute;
-    left: 54%;
-    top: 15%;
+    left: 70%;
+    top: 20%;
 }
 p{
     text-align: center;
     margin-top: 12%;
 }
 .efecto-boton{
-    top: 45%;
-    left: 45%;
+    top: 50%;
+    left: 60%;
     font-size:x-large;
     font-family: Arial, Helvetica, sans-serif;
     width: 10%;
@@ -97,57 +107,16 @@ p{
     transition: all 0.3s ease-out;
     transform: skewX(-45deg) scale(1, 1);
 }
-.gatito{
-    visibility: hidden;
-    position: absolute;
-    margin-top: 26.9%;
-    margin-left: -5%;
-    scale: 0.5;
-    animation-name: gato;
-    animation-duration:10s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
+.cajita{
+    position: relative;
+    height: 150%;
+    width: 100%;
 }
-@keyframes gato{
-    0%{
-        visibility: visible;
-        margin-left: -20%;
-        margin-top: 26.9%;
+@media only screen and (max-width:1300px){
+    .fire{
+        visibility:hidden;
     }
-    45%{
-        margin-left: 10%;
-        margin-top: 22%;
-    }
-    65%{
-        margin-left: 30%;
-        margin-top: 26.9%;
-    }
-    100%{
-        margin-left: 100%;
+    .fire2{
+        visibility:hidden;
     }
 }
-.gatito2{
-    visibility: hidden;
-    position: absolute;
-    margin-top: -7.95%;
-    margin-left: 94.3%;
-    scale: 0.5;
-    transform: rotateY(-180deg);
-    transform: rotate(180deg);
-    animation-name: gato2;
-    animation-delay: 13s;
-    animation-duration:10s;
-    animation-iteration-count: infinite;
-}
- @keyframes gato2{
-    0%{
-        visibility: visible;
-        margin-left:94.3%;
-    }
-    2%{
-        margin-left:100%;
-    }
-    100%{
-        margin-left: -30%;
-    }
-} 

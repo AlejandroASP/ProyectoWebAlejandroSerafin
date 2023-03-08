@@ -34,13 +34,15 @@ body{
 .caja ul li a{
   text-decoration: none;
   background-color: none;
-  color: red;
+  color: black;
   transition: .35s ease-in-out;
 }
 
-.caja ul li a:hover{
-  color: rgb(62, 37, 206);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+li:first-child:hover{
+  background-color:rgb(107, 107, 247);
+}
+li:nth-child(2):hover{
+  background-color: rgb(247, 57, 57);
 }
 .contenido{
   position: absolute;
@@ -63,4 +65,20 @@ tr td{
 }
 .checkbox:hover{
   box-shadow: 2px 2px 10px black;
+}
+.nombre{
+  margin-right: 5%;
+}
+.apellidos{
+  margin-right: 5%;
+}
+.correo{
+  margin-right: 5%;
+}
+.fecha{
+  margin-right: 20%;
+}
+.mape{
+  scale: 0.5;
+  margin-left: 20%;
 }
